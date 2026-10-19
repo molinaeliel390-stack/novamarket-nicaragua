@@ -1,0 +1,90 @@
+[
+  {
+    "id": "sample0",
+    "name": "Audífonos inalámbricos",
+    "category": "Tecnología",
+    "emoji": "🎧",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample1",
+    "name": "Accesorios para gamers",
+    "category": "Videojuegos",
+    "emoji": "🎮",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample2",
+    "name": "Accesorios para el hogar",
+    "category": "Hogar",
+    "emoji": "🏠",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample3",
+    "name": "Reloj moderno",
+    "category": "Accesorios",
+    "emoji": "⌚",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample4",
+    "name": "Mochila para uso diario",
+    "category": "Moda",
+    "emoji": "🎒",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample5",
+    "name": "Cuidado personal",
+    "category": "Belleza",
+    "emoji": "✨",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample6",
+    "name": "Cargador y cables",
+    "category": "Tecnología",
+    "emoji": "🔌",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  },
+  {
+    "id": "sample7",
+    "name": "Luz para escritorio",
+    "category": "Hogar",
+    "emoji": "💡",
+    "price": "",
+    "oldPrice": "",
+    "image": "",
+    "link": "https://www.amazon.com/",
+    "description": "Explora opciones y consulta los detalles en la tienda."
+  }
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaMarket | Ofertas y productos</title>
+<meta name="description" content="Descubre productos y ofertas de tiendas en línea.">
+<style>
+:root{--bg:#f5f7fb;--ink:#172033;--muted:#667085;--brand:#5b4bff;--brand2:#12b8a6;--card:#fff;--line:#e6e9f2}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:11px 15px;font-weight:700}.primary{background:var(--brand);color:white}.secondary{background:#eeecff;color:#4338ca}.dark{background:#172033;color:white}.wrap{max-width:1180px;margin:auto;padding:0 20px}.topbar{background:#151a2d;color:#e8eaff;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.headrow{display:flex;align-items:center;gap:20px;padding:17px 0}.logo{font-size:23px;font-weight:900;letter-spacing:-1px;white-space:nowrap}.logo span{color:var(--brand)}.search{display:flex;flex:1;gap:8px}.search input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;outline-color:var(--brand)}.hero{margin:25px auto 22px;border-radius:24px;padding:clamp(26px,5vw,58px);color:#fff;background:radial-gradient(circle at 85% 25%,#8b7dff 0,transparent 28%),linear-gradient(120deg,#211b5e,#5142db 58%,#11a9a5);display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:20px;overflow:hidden}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.02;margin:12px 0}.hero p{font-size:17px;line-height:1.6;color:#eeedff;max-width:600px}.pill{display:inline-block;background:#ffffff25;border:1px solid #ffffff45;border-radius:99px;padding:7px 11px;font-size:12px;font-weight:800;letter-spacing:.5px}.heroart{font-size:clamp(80px,14vw,150px);text-align:center;filter:drop-shadow(0 15px 15px #17134c55)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:28px 0 16px}.sectionhead h2{margin:0;font-size:26px}.sectionhead p{margin:5px 0 0;color:var(--muted)}.categories{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 22px}.cat{background:#fff;color:#344054;border:1px solid var(--line)}.cat.active{background:#e9e7ff;color:#4338ca;border-color:#c9c3ff}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 5px 18px #26345b08}.photo{height:175px;background:linear-gradient(135deg,#f0efff,#e9fafa);display:grid;place-items:center;font-size:66px;position:relative}.badge{position:absolute;top:12px;left:12px;background:#fff;color:#4b3de3;border-radius:99px;padding:5px 8px;font-size:11px;font-weight:800}.pbody{padding:15px;display:flex;flex-direction:column;flex:1}.category{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#7770e9;font-weight:800}.pbody h3{font-size:16px;line-height:1.35;margin:7px 0}.desc{color:var(--muted);font-size:13px;line-height:1.5;flex:1}.price{font-size:20px;font-weight:900;margin:13px 0}.pbody .primary{width:100%}.empty{grid-column:1/-1;background:#fff;border:1px dashed #cbd0df;padding:35px;text-align:center;border-radius:18px;color:var(--muted)}.notice{margin:25px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;color:var(--muted);font-size:13px;line-height:1.6}.footer{margin-top:45px;background:#151a2d;color:#d8dbea;padding:30px 0}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.admin{display:none;margin:24px auto;background:white;border:1px solid var(--line);border-radius:20px;padding:22px}.admin.show{display:block}.admin h2{margin-top:0}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;font-weight:800;color:#475467}.field input,.field select,.field textarea{border:1px solid #d9deea;border-radius:10px;padding:11px;min-width:0}.field.full{grid-column:1/-1}.adminlist{margin-top:18px;display:grid;gap:8px}.adminitem{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);padding:10px;border-radius:12px}.adminitem small{display:block;color:var(--muted)}.danger{background:#fee4e2;color:#b42318}.modalback{display:none;position:fixed;inset:0;background:#101828aa;z-index:10;place-items:center;padding:20px}.modalback.show{display:grid}.modal{background:white;border-radius:18px;max-width:420px;width:100%;padding:24px}.modal h3{margin-top:0}.modal input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0 12px}.small{font-size:12px;color:var(--muted);line-height:1.5}.mobileadmin{white-space:nowrap}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .35fr}.heroart{font-size:80px}.headrow{gap:10px;flex-wrap:wrap}.search{order:3;flex-basis:100%}.formgrid{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{padding:0 13px}.hero{grid-template-columns:1fr}.heroart{display:none}.grid{gap:10px}.photo{height:135px;font-size:52px}.pbody{padding:11px}.pbody h3{font-size:14px}.price{font-size:18px}.sectionhead h2{font-size:22px}.logo{font-size:21px}.adminitem{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>✨ Descubre productos y ofertas en un solo lugar</span><span>Compra directamente en la tienda del vendedor</span></div></div>
+<header class="header"><div class="wrap headrow">
+  <div class="logo">Nova<span>Market</span></div>
+  <div class="search"><input id="search" type="search" placeholder="Buscar productos, tecnología, moda..." aria-label="Buscar productos"><button class="primary" onclick="renderProducts()">Buscar</button></div>
+  <button class="secondary mobileadmin" onclick="openLogin()">⚙ Administrar</button>
+</div></header>
+<main class="wrap">
+<section class="hero"><div><span class="pill">TU PRÓXIMO DESCUBRIMIENTO</span><h1>Buenas ofertas.<br>Mejores hallazgos.</h1><p>Explora productos seleccionados de distintas tiendas. Encuentra algo que te guste y visita el vendedor para completar tu compra.</p><button class="dark" onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Explorar productos&nbsp; →</button></div><div class="heroart" aria-hidden="true">🛍️</div></section>
+<section id="catalogo">
+<div class="sectionhead"><div><h2>Productos destacados</h2><p>Encuentra tu próxima compra favorita.</p></div><span id="count" class="small"></span></div>
+<div id="categories" class="categories"></div><div id="products" class="grid"></div>
+</section>
+<section class="notice"><strong>Transparencia:</strong> Algunos botones pueden ser enlaces de afiliado. Si compras a través de ellos, el sitio podría recibir una comisión sin que el precio para ti cambie. Los precios y la disponibilidad pueden variar; compruébalos en la tienda de destino. Esta página de demostración no está afiliada ni patrocinada por Amazon.</section>
+<section id="admin" class="admin">
+<h2>Panel de administración</h2>
+<p class="small">Puedes agregar, editar y eliminar productos de esta demostración. Los cambios se guardan en este navegador usando almacenamiento local. Para administrar la web desde cualquier dispositivo y tener seguridad real, hay que conectar una base de datos y autenticación en un servicio de alojamiento.</p>
+<form id="productForm" class="formgrid">
+<input type="hidden" id="editId">
+<div class="field"><label for="name">Nombre del producto *</label><input id="name" required maxlength="100" placeholder="Ej. Audífonos inalámbricos"></div>
+<div class="field"><label for="category">Categoría</label><select id="category"><option>Tecnología</option><option>Moda</option><option>Hogar</option><option>Deportes</option><option>Belleza</option><option>Otros</option></select></div>
+<div class="field"><label for="price">Precio mostrado (opcional)</label><input id="price" placeholder="Ej. $29.99"></div>
+<div class="field"><label for="emoji">Icono del producto</label><select id="emoji"><option value="🎧">🎧 Audífonos</option><option value="📱">📱 Teléfono</option><option value="⌚">⌚ Reloj</option><option value="👟">👟 Zapatos</option><option value="🎒">🎒 Mochila</option><option value="🏠">🏠 Hogar</option><option value="💄">💄 Belleza</option><option value="🎮">🎮 Videojuegos</option><option value="📷">📷 Cámara</option><option value="🛍️">🛍️ General</option></select></div>
+<div class="field full"><label for="description">Descripción corta</label><textarea id="description" rows="2" maxlength="240" placeholder="Describe el producto de forma clara"></textarea></div>
+<div class="field full"><label for="url">Enlace de destino o afiliado *</label><input id="url" type="url" required placeholder="https://..."><span class="small">Usa tu enlace de afiliado aprobado por la tienda. No publiques enlaces que no hayas verificado.</span></div>
+<div class="field full" style="display:flex;flex-direction:row;flex-wrap:wrap"><button class="primary" type="submit" id="saveBtn">Publicar producto</button><button type="button" class="secondary" onclick="resetForm()">Limpiar formulario</button><button type="button" class="danger" onclick="closeAdmin()">Cerrar panel</button></div>
+</form>
+<div class="sectionhead"><div><h3>Productos publicados</h3><p>Gestiona los productos de tu catálogo.</p></div></div><div id="adminList" class="adminlist"></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footerrow"><div><div class="logo">Nova<span>Market</span></div><p class="small" style="color:#c6c9d7">Un lugar para descubrir productos y ofertas.</p></div><div class="small" style="color:#c6c9d7">© <span id="year"></span> NovaMarket. Todos los derechos reservados.</div></div></footer>
+<div id="login" class="modalback"><div class="modal"><h3>Acceso al panel</h3><p class="small">Esta contraseña es solo una barrera local de demostración, no un sistema seguro para una web pública.</p><label for="pass" class="small">Contraseña de demostración</label><input id="pass" type="password" placeholder="Introduce la contraseña"><div style="display:flex;gap:8px"><button class="primary" onclick="login()">Entrar</button><button class="secondary" onclick="closeLogin()">Cancelar</button></div><p id="loginError" class="small" style="color:#b42318"></p></div></div>
+<script>
+const KEY='novamarket_products_v1';
+const starter=[
+{id:'p1',name:'Audífonos inalámbricos',category:'Tecnología',price:'',emoji:'🎧',description:'Una opción práctica para escuchar música y atender llamadas.',url:'https://www.amazon.com/',badge:'Popular'},
+{id:'p2',name:'Reloj inteligente',category:'Tecnología',price:'',emoji:'⌚',description:'Explora opciones para acompañar tus actividades diarias.',url:'https://www.amazon.com/',badge:'Destacado'},
+{id:'p3',name:'Mochila para uso diario',category:'Moda',price:'',emoji:'🎒',description:'Busca diseños cómodos para estudiar, trabajar o viajar.',url:'https://www.amazon.com/',badge:''},
+{id:'p4',name:'Accesorios para el hogar',category:'Hogar',price:'',emoji:'🏠',description:'Ideas útiles para darle un toque especial a tus espacios.',url:'https://www.amazon.com/',badge:''}
+];
+let products=[];
+try{products=JSON.parse(localStorage.getItem(KEY))||starter}catch(e){products=starter}
+if(!Array.isArray(products)||!products.length)products=starter;
+let activeCategory='Todas';
+function save(){localStorage.setItem(KEY,JSON.stringify(products))}
+function safe(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function validUrl(s){try{let u=new URL(s);return u.protocol==='https:'||u.protocol==='http:'}catch(e){return false}}
+function renderCategories(){let cats=['Todas',...new Set(products.map(p=>p.category||'Otros'))];document.getElementById('categories').innerHTML=cats.map(c=>`<button class="cat ${c===activeCategory?'active':''}" onclick="setCategory('${safe(c).replace(/'/g,"\\'")}')">${safe(c)}</button>`).join('')}
+function setCategory(c){activeCategory=c;renderProducts()}
+function renderProducts(){
+ const q=(document.getElementById('search').value||'').trim().toLowerCase();
+ const list=products.filter(p=>(activeCategory==='Todas'||p.category===activeCategory)&&[p.name,p.description,p.category].join(' ').toLowerCase().includes(q));
+ document.getElementById('count').textContent=`${list.length} producto${list.length===1?'':'s'}`;
+ document.getElementById('products').innerHTML=list.length?list.map(p=>`<article class="product"><div class="photo"><span>${safe(p.emoji||'🛍️')}</span>${p.badge?`<span class="badge">${safe(p.badge)}</span>`:''}</div><div class="pbody"><span class="category">${safe(p.category||'Otros')}</span><h3>${safe(p.name)}</h3><div class="desc">${safe(p.description||'Consulta los detalles en la tienda de destino.')}</div>${p.price?`<div class="price">${safe(p.price)}</div>`:'<div class="price" style="font-size:13px;color:#667085">Consulta el precio en la tienda</div>'}<button class="primary" onclick="goProduct('${safe(p.id)}')">Ver producto ↗</button></div></article>`).join(''):'<div class="empty">No encontramos productos con esa búsqueda. Prueba otra palabra o categoría.</div>';
+ renderCategories();if(document.getElementById('admin').classList.contains('show'))renderAdminList()
+}
+function goProduct(id){let p=products.find(x=>x.id===id);if(!p||!validUrl(p.url)){alert('Este enlace no parece válido. El administrador debe revisarlo.');return}window.open(p.url,'_blank','noopener,noreferrer')}
+function openLogin(){document.getElementById('login').classList.add('show');document.getElementById('pass').focus()}
+function closeLogin(){document.getElementById('login').classList.remove('show');document.getElementById('loginError').textContent='';document.getElementById('pass').value=''}
+function login(){if(document.getElementById('pass').value==='admin-demo-2026'){closeLogin();document.getElementById('admin').classList.add('show');document.getElementById('admin').scrollIntoView({behavior:'smooth'});renderAdminList()}else document.getElementById('loginError').textContent='Contraseña incorrecta. Prueba la contraseña de demostración indicada en las instrucciones.'}
+function closeAdmin(){document.getElementById('admin').classList.remove('show')}
+function resetForm(){document.getElementById('productForm').reset();document.getElementById('editId').value='';document.getElementById('saveBtn').textContent='Publicar producto'}
+document.getElementById('productForm').addEventListener('submit',e=>{e.preventDefault();let name=document.getElementById('name').value.trim(),url=document.getElementById('url').value.trim();if(!name||!validUrl(url)){alert('Escribe el nombre y un enlace válido que comience por http:// o https://');return}let id=document.getElementById('editId').value||('p'+Date.now());let p={id,name,category:document.getElementById('category').value,price:document.getElementById('price').value.trim(),emoji:document.getElementById('emoji').value,description:document.getElementById('description').value.trim(),url,badge:''};let ix=products.findIndex(x=>x.id===id);if(ix>=0)products[ix]=p;else products.unshift(p);save();resetForm();renderProducts();renderAdminList();alert('Producto guardado en este navegador.')});
+function renderAdminList(){let el=document.getElementById('adminList');el.innerHTML=products.length?products.map(p=>`<div class="adminitem"><div><strong>${safe(p.emoji)} ${safe(p.name)}</strong><small>${safe(p.category)} · ${safe(p.price||'Precio en tienda')}</small></div><div style="display:flex;gap:7px;flex-wrap:wrap"><button class="secondary" onclick="editProduct('${safe(p.id)}')">Editar</button><button class="danger" onclick="deleteProduct('${safe(p.id)}')">Eliminar</button></div></div>`).join(''):'<p class="small">Todavía no hay productos.</p>'}
+function editProduct(id){let p=products.find(x=>x.id===id);if(!p)return;document.getElementById('editId').value=p.id;document.getElementById('name').value=p.name;document.getElementById('category').value=p.category;document.getElementById('price').value=p.price||'';document.getElementById('emoji').value=p.emoji||'🛍️';document.getElementById('description').value=p.description||'';document.getElementById('url').value=p.url;document.getElementById('saveBtn').textContent='Guardar cambios';document.getElementById('productForm').scrollIntoView({behavior:'smooth'})}
+function deleteProduct(id){let p=products.find(x=>x.id===id);if(!p||!confirm('¿Eliminar "'+p.name+'"?'))return;products=products.filter(x=>x.id!==id);save();renderProducts();renderAdminList()}
+document.getElementById('search').addEventListener('input',renderProducts);
+document.getElementById('year').textContent=new Date().getFullYear();
+renderProducts();
+</script>
+</body></html>
